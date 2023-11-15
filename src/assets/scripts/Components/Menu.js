@@ -8,8 +8,7 @@ export function setupMenu(menus) {
         );
 
         const handleToggleMenu = () => {
-            menus[i].style.display =
-                menus[i].style.display === 'block' ? 'none' : 'block';
+            menus[i].classList.toggle('is-active');
         };
 
         menuTriggers.forEach((trigger) =>

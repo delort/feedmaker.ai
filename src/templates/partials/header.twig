@@ -1,17 +1,6 @@
 <header class="header">
     <div class="container">
         <div class="header__content">
-            <div class="header__menu-trigger">
-                <button
-                    data-menu-trigger="header"
-                    class="btn btn--icon"
-                    type="button"
-                >
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="/images/sprite.svg#menu"></use>
-                    </svg>
-                </button>
-            </div>
             <div class="header__logotype">
                 <a href="/">
                     <img src="images/logo.svg" alt="{{ global.app }} logotype" />
@@ -19,16 +8,17 @@
             </div>
             <div data-menu="header" class="menu">
                 <div data-menu-trigger="header" class="menu__overlay"></div>
+                {#<button#}
+                {#    data-menu-trigger="header"#}
+                {#    class="btn btn--icon menu__trigger"#}
+                {#    type="button"#}
+                {#>#}
+                {#    <svg class="icon" aria-hidden="true">#}
+                {#        <use xlink:href="/images/sprite.svg#cross"></use>#}
+                {#    </svg>#}
+                {#</button>#}
+
                 <div class="menu__content">
-                    <button
-                        data-menu-trigger="header"
-                        class="btn btn--icon header__menu-trigger"
-                        type="button"
-                    >
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="/images/sprite.svg#cross"></use>
-                        </svg>
-                    </button>
                     <ul>
                         {% for item in global.menu %}
                             {% if item.items|length %}
@@ -63,14 +53,28 @@
                             {% endif %}
                         {%  endfor %}
                     </ul>
+                    <div class="menu__footer">
+                        <a href="#" class="btn btn--primary">
+                            Start Creating Now
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="header__actions">
-                <a href="#" class="btn btn--icon">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="/images/sprite.svg#user_circle"></use>
-                    </svg>
+                <a href="#" class="btn btn--primary">
+                    Start Creating Now
                 </a>
+            </div>
+            <div class="header__menu-trigger">
+                <button
+                    data-menu-trigger="header"
+                    class="btn btn--icon"
+                    type="button"
+                >
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>

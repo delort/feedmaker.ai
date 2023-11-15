@@ -7,10 +7,15 @@
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 10px 0;
+
+        @media (--lg-up) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__logotype {
@@ -23,8 +28,12 @@
     }
 
     &__actions {
-        display: flex;
-        justify-content: flex-end;
+        display: none;
+
+        @media (--lg-up) {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     &__menu-trigger {
