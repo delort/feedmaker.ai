@@ -1,18 +1,9 @@
 <div class="container">
     <h1>
         <svg class="icon" aria-hidden="true">
-            <use xlink:href="/images/sprite.svg#apps"></use>
+            <use xlink:href="/images/sprite.svg#checkmark"></use>
         </svg>
-        {{ title }}
+        {{ title ~ ' - ' ~ foo }}
     </h1>
-    <button class="btn" id="counter"></button>
-
-    <div class="row">
-        <div class="col-6">
-            123
-        </div>
-        <div class="col-6">
-            123
-        </div>
-    </div>
+    <button class="btn" data-counter></button>
 </div>

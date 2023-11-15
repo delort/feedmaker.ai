@@ -1,7 +1,9 @@
 import '../styles/+.pcss';
 
-import { setupCounter } from './Components/Counter.js';
+import { setupMenu } from './Components/Menu.js';
+import { setupDropdown } from './Components/Dropdown.js';
 
 (function () {
-    setupCounter(document.getElementById('counter'));
+    setupMenu(document.querySelectorAll('[data-menu]'));
+    setupDropdown(document.querySelectorAll('[data-dropdown]'));
 })();
