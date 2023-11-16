@@ -26,6 +26,7 @@
         "postcss-nested-ancestors": "^3.0.0",
         "postcss-pxtorem": "^6.0.0",
         "prettier": "^3.1.0",
+        "prettier-plugin-css-order": "^2.0.1",
         "vite": "^4.5.0",
         "vite-plugin-full-reload": "^1.0.5",
         "vite-plugin-twig": "^2.1.1",
@@ -61,6 +62,7 @@
                     "singleQuote": false
                 }
             }
-        ]
+        ],
+        "plugins": ["prettier-plugin-css-order"]
     }
 }

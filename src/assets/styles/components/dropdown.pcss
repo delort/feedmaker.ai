@@ -1,24 +1,24 @@
 .dropdown {
     &_icon {
-        margin-left: 3px;
         transition: all 0.15s ease;
+        margin-left: 3px;
     }
 
     &__content {
-        opacity: 0;
         transform: translateY(15px);
         visibility: hidden;
+        opacity: 0;
         transition: all 0.25s ease;
-        max-height: 0;
-        border-radius: 3px;
         border-bottom: 1px solid var(--color-border);
+        border-radius: 3px;
         background-color: white;
+        max-height: 0;
 
         @media (--lg-up) {
             position: absolute;
             top: 100%;
-            left: 0;
             right: 0;
+            left: 0;
             box-shadow: 0 4px 8px 0 var(--color-black-4);
         }
     }
@@ -52,14 +52,14 @@
         }
 
         img {
+            display: block;
+            filter: drop-shadow(0 3px 6px var(--color-black-4));
+            margin-bottom: 6px;
             width: 100%;
             max-width: 140px;
             height: 124px;
             object-fit: contain;
             object-position: 50% 50%;
-            display: block;
-            filter: drop-shadow(0 3px 6px var(--color-black-4));
-            margin-bottom: 6px;
 
             @media (--lg-up) {
                 margin-bottom: 16px;
@@ -69,8 +69,8 @@
 
     &.is-active {
         ^&__trigger {
-            color: var(--color-primary);
             background-color: var(--color-black-4);
+            color: var(--color-primary);
 
             @media (--lg-up) {
                 background-color: transparent;
@@ -86,9 +86,9 @@
         }
 
         ^&__content {
+            transform: translateY(0);
             visibility: visible;
             opacity: 1;
-            transform: translateY(0);
             max-height: initial;
         }
     }
