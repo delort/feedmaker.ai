@@ -279,5 +279,41 @@
             "label": "Instagram",
             "code": "instagram"
         }
-    ]
+    ],
+    "sections": {
+        "hero": {
+            "title": "Design Social Media Ads and Posts Using AI",
+            "description": "Start by selecting a template from the gallery",
+            "actions": [
+                {
+                    "link": "/pricing.html",
+                    "label": "Pricing",
+                    "style": "secondary"
+                },
+                {
+                    "link": "#",
+                    "label": "Create Now",
+                    "style": "primary"
+                }
+            ],
+            "logos_description": "Trusted by big-time companies, who win big-time revenue",
+            "logos": [
+                {
+                    "path": "images/logos/1.svg"
+                },
+                {
+                    "path": "images/logos/2.svg"
+                },
+                {
+                    "path": "images/logos/3.svg"
+                },
+                {
+                    "path": "images/logos/4.svg"
+                },
+                {
+                    "path": "images/logos/5.svg"
+                }
+            ]
+        }
+    }
 }

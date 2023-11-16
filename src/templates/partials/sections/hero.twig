@@ -1,13 +1,20 @@
 <section class="hero">
     <div class="container">
-        <h1 class="hero__title">Design Social Media Ads and Posts Using AI</h1>
-        <div class="paragraph hero__paragraph">
-            <p>Start by selecting a template from the gallery</p>
-        </div>
-        <div class="hero__actions">
-            <a href="/pricing.html" class="btn btn--secondary">Pricing</a>
-            <a href="#" class="btn btn--primary">Create Now</a>
-        </div>
+        {% if global.sections.hero.title %}
+            <h1 class="hero__title">{{ global.sections.hero.title }}</h1>
+        {% endif %}
+        {% if global.sections.hero.description %}
+            <div class="paragraph hero__paragraph">
+                <p>{{ global.sections.hero.description }}</p>
+            </div>
+        {% endif %}
+        {% if global.sections.hero.actions|length %}
+            <div class="hero__actions">
+                {% for action in global.sections.hero.actions %}
+                    <a href="{{ action.link }}" class="btn btn--{{ action.style }}">{{ action.label }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
     <div class="hero__images">
         <svg class="hero__mockup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480">
@@ -23,15 +30,17 @@
         </svg>
     </div>
     <div class="container">
-        <div class="paragraph">
-            <p>Trusted by big-time companies, who win big-time revenue</p>
-        </div>
-        <div class="hero__logos">
-            <img src="images/logos/1.svg" alt="Logo placeholder" />
-            <img src="images/logos/2.svg" alt="Logo placeholder" />
-            <img src="images/logos/3.svg" alt="Logo placeholder" />
-            <img src="images/logos/4.svg" alt="Logo placeholder" />
-            <img src="images/logos/5.svg" alt="Logo placeholder" />
-        </div>
+        {% if global.sections.hero.logos_description %}
+            <div class="paragraph">
+                <p>{{ global.sections.hero.logos_description }}</p>
+            </div>
+        {% endif %}
+        {% if global.sections.hero.logos|length %}
+            <div class="hero__logos">
+                {% for logo in global.sections.hero.logos %}
+                    <img src="{{ logo.path }}" alt="Logo placeholder" />
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
 </section>
