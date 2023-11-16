@@ -1,7 +1,7 @@
 {
     "app": "feedmaker.ai",
-    "menu": {
-        "create": {
+    "menuHeader": [
+        {
             "link": "#",
             "label": "Create",
             "items": [
@@ -37,17 +37,247 @@
                 }
             ]
         },
-        "templates": {
+        {
             "link": "/templates.html",
             "label": "Templates"
         },
-        "pricing": {
+        {
             "link": "/pricing.html",
             "label": "Pricing"
         },
-        "features": {
+        {
             "link": "/features.html",
             "label": "Features"
         }
-    }
+    ],
+    "footerMenu": [
+        {
+            "link": "#",
+            "label": "Product",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Plans & Prices"
+                },
+                {
+                    "link": "#",
+                    "label": "API"
+                },
+                {
+                    "link": "#",
+                    "label": "Designer"
+                },
+                {
+                    "link": "#",
+                    "label": "CRM"
+                },
+                {
+                    "link": "#",
+                    "label": "Ecommerce"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Solution",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Freelancers & Agencies"
+                },
+                {
+                    "link": "#",
+                    "label": "Enterprise"
+                },
+                {
+                    "link": "#",
+                    "label": "Ads Agencies"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Create",
+            "class": "footer__block--full-height",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Instagram Post"
+                },
+                {
+                    "link": "#",
+                    "label": "Instagram Story"
+                },
+                {
+                    "link": "#",
+                    "label": "Instagram Ad"
+                },
+                {
+                    "link": "#",
+                    "label": "Facebook Post"
+                },
+                {
+                    "link": "#",
+                    "label": "Facebook Cover"
+                },
+                {
+                    "link": "#",
+                    "label": "Facebook Ad"
+                },
+                {
+                    "link": "#",
+                    "label": "X Post"
+                },
+                {
+                    "link": "#",
+                    "label": "X Cover"
+                },
+                {
+                    "link": "#",
+                    "label": "X Ad"
+                },
+                {
+                    "link": "#",
+                    "label": "YouTube Thumbnail"
+                },
+                {
+                    "link": "#",
+                    "label": "Create More Designs"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Company",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "About"
+                },
+                {
+                    "link": "#",
+                    "label": "Product"
+                },
+                {
+                    "link": "#",
+                    "label": "Terms of Use"
+                },
+                {
+                    "link": "#",
+                    "label": "Privacy Policy"
+                },
+                {
+                    "link": "#",
+                    "label": "Contact Us"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Features",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Background Remover"
+                },
+                {
+                    "link": "#",
+                    "label": "Animation Maker"
+                },
+                {
+                    "link": "#",
+                    "label": "AI Assistent"
+                },
+                {
+                    "link": "#",
+                    "label": "Publication Planning"
+                },
+                {
+                    "link": "#",
+                    "label": "AD Manager"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "ADS Partners",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Google Ads"
+                },
+                {
+                    "link": "#",
+                    "label": "LinkedIn Ads"
+                },
+                {
+                    "link": "#",
+                    "label": "Meta Ads"
+                },
+                {
+                    "link": "#",
+                    "label": "Tiktok Ads"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Explore",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "Design Ideas"
+                },
+                {
+                    "link": "#",
+                    "label": "Blog"
+                }
+            ]
+        },
+        {
+            "link": "#",
+            "label": "Social",
+            "items": [
+                {
+                    "link": "#",
+                    "label": "AD Manager"
+                },
+                {
+                    "link": "#",
+                    "label": "AD Manager"
+                },
+                {
+                    "link": "#",
+                    "label": "AD Manager"
+                }
+            ]
+        }
+    ],
+    "socials": [
+        {
+            "link": "#",
+            "label": "Facebook",
+            "code": "facebook"
+        },
+        {
+            "link": "#",
+            "label": "X",
+            "code": "x"
+        },
+        {
+            "link": "#",
+            "label": "Linkedin",
+            "code": "linkedin"
+        },
+        {
+            "link": "#",
+            "label": "Youtube",
+            "code": "youtube"
+        },
+        {
+            "link": "#",
+            "label": "Instagram",
+            "code": "instagram"
+        }
+    ]
 }

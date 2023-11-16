@@ -3,10 +3,12 @@
     <head>
         {% include 'root::partials/head.twig' %}
     </head>
-    <body>
+    <body class="layout">
         {% include 'root::partials/header.twig' %}
 
         {% block page %}{% endblock %}
+
+        {% include 'root::partials/footer.twig' %}
 
         <script type="module" src="/assets/scripts/main.js"></script>
     </body>

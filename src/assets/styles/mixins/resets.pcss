@@ -7,11 +7,18 @@
 @define-mixin reset-btn {
     margin: 0;
     border: none;
-    background: transparent;
+    background-color: transparent;
     padding: 0;
     width: auto;
     overflow: visible;
     color: inherit;
     font: inherit;
     line-height: normal;
+}
+
+@define-mixin reset-select {
+    @mixin reset-btn;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

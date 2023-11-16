@@ -1,0 +1,37 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__menu">
+                {% for item in global.footerMenu %}
+                    <div class="footer__block {{ item.class }}">
+                        <h2 class="footer__title">{{ item.label }}</h2>
+                        {% if item.items|length %}
+                            <ul class="footer__list">
+                                {% for subitem in item.items %}
+                                    <li><a href="{{ subitem.link }}">{{ subitem.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <div class="footer__block">
+                    <h2 class="footer__title">Language</h2>
+                    <select name="language" aria-label="language">
+                        <option value="en" selected>🇺🇸 English</option>
+                        <option value="ua">🇺🇦 Ukraine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer__copyrights">© Feedmaker Ltd, 2023</div>
+            <div class="footer__socials">
+                {% for social in global.socials %}
+                    <a href="{{ social.link }}" title="{{ social.label }}">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#{{ social.code }}"></use>
+                        </svg>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>
