@@ -8,32 +8,44 @@
                 {
                     "link": "#",
                     "label": "Instagram Post",
-                    "image": "images/instagram-post.svg"
+                    "image": {
+                        "path": "images/instagram-post.svg"
+                    }
                 },
                 {
                     "link": "#",
                     "label": "Instagram Story",
-                    "image": "images/instagram-story.svg"
+                    "image": {
+                        "path": "images/instagram-story.svg"
+                    }
                 },
                 {
                     "link": "#",
                     "label": "Facebook Post",
-                    "image": "images/facebook-post.svg"
+                    "image": {
+                        "path": "images/facebook-post.svg"
+                    }
                 },
                 {
                     "link": "#",
                     "label": "Facebook Cover",
-                    "image": "images/facebook-cover.svg"
+                    "image": {
+                        "path": "images/facebook-cover.svg"
+                    }
                 },
                 {
                     "link": "#",
                     "label": "YouTube Video Thumbnail",
-                    "image": "images/youtube-thumbnail.svg"
+                    "image": {
+                        "path": "images/youtube-thumbnail.svg"
+                    }
                 },
                 {
                     "link": "#",
                     "label": "X Post",
-                    "image": "images/x-post.svg"
+                    "image": {
+                        "path": "images/x-post.svg"
+                    }
                 }
             ]
         },

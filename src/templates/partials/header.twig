@@ -36,7 +36,7 @@
                                                     {% for subitem in item.items %}
                                                         <a href="{{ subitem.link }}" target="_blank">
                                                             {% if subitem.image %}
-                                                                <img src="{{ subitem.image }}" alt="{{ subitem.label }}">
+                                                                <img src="{{ subitem.image.path }}" alt="{{ subitem.label }}">
                                                             {% endif %}
                                                             <span>{{ subitem.label }}</span>
                                                         </a>
