@@ -326,6 +326,41 @@
                     "path": "images/logos/5.svg"
                 }
             ]
+        },
+        "articles": {
+            "title": "You may also be interested in",
+            "items": [
+                {
+                    "link": "/article.html",
+                    "image": {
+                        "path": "images/article.jpg"
+                    },
+                    "category": {
+                        "title": "Team"
+                    },
+                    "title": "Maecenas a tortor a orci vestibulum blandit."
+                },
+                {
+                    "link": "/article.html",
+                    "image": {
+                        "path": "images/article.jpg"
+                    },
+                    "category": {
+                        "title": "Team"
+                    },
+                    "title": "Maecenas a tortor a orci vestibulum blandit."
+                },
+                {
+                    "link": "/article.html",
+                    "image": {
+                        "path": "images/article.jpg"
+                    },
+                    "category": {
+                        "title": "Team"
+                    },
+                    "title": "Maecenas a tortor a orci vestibulum blandit."
+                }
+            ]
         }
     }
 }

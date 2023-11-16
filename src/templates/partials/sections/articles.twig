@@ -1,0 +1,24 @@
+<section class="articles">
+    <div class="container">
+        {% if global.sections.articles.title %}
+            <h1 class="articles__title">{{ global.sections.articles.title }}</h1>
+        {% endif %}
+        {% if global.sections.articles.items|length %}
+            <div class="articles__items">
+                {% for item in global.sections.articles.items %}
+                    <article class="article">
+                        <a href="{{ item.link }}" class="article__poster">
+                            <img
+                                src="{{ item.image.path }}" alt="{{ item.image.title ?? item.title }}"
+                            />
+                        </a>
+                        <div class="article__categories">
+                            <a href="#">Team</a>
+                        </div>
+                        <a href="{{ item.link }}" class="article__title">{{ item.title }}</a>
+                    </article>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

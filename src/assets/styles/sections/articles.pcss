@@ -1,0 +1,19 @@
+.articles {
+    padding: 60px 0;
+
+    &__title {
+        @mixin font-headline-l;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__items {
+        display: grid;
+        margin-top: 40px;
+        grid-gap: var(--container-gap);
+
+        @media (--lg-up) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
