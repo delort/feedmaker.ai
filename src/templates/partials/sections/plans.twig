@@ -1,0 +1,57 @@
+{% set section = global.sections.plans %}
+
+<section class="plans">
+    <div class="container">
+        {% if section.title %}
+            <h2 class="plans__title">{{ section.title }}</h2>
+        {% endif %}
+        {% if section.items|length %}
+            <div
+                class="tabs tabs--segment plans_tabs {{ section.caption ? 'plans_tabs--caption' : '' }}"
+                data-caption="{{ section.caption }}"
+                data-plan="plan"
+            >
+                <button class="tabs__item is-active" type="button">Monthly</button>
+                <button class="tabs__item" type="button">Yearly</button>
+            </div>
+            <div class="plans__cards" data-plan-content="plan">
+                {% for plan in section.items %}
+                    <div class="card {{ plan.caption ? 'card--caption' : '' }}">
+                        {% if plan.caption %}
+                            <div class="card__caption">{{ plan.caption }}</div>
+                        {% endif %}
+                        {% if plan.title %}
+                            <h3 class="card__title">{{ plan.title }}</h3>
+                        {% endif %}
+                        {% if plan.prices|length %}
+                            <div class="card__price">
+                                <span data-plan-switch='["${{ plan.prices[0] }}", "${{ plan.prices[1] }}"]'>${{ plan.prices[0] }}</span>
+                                <small data-plan-switch='["/monthly", "/yearly"]'>/monthly</small>
+                            </div>
+                        {% endif %}
+                        {% if plan.actions|length %}
+                            <div class="card__action">
+                                {% for btn in plan.actions %}
+                                    <a
+                                        href="{{ btn.link }}"
+                                        class="btn btn--{{ btn.style }}"
+                                        target="_blank"
+                                    >
+                                        {{ btn.label }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        {% if plan.list|length %}
+                            <ul class="card__list">
+                                {% for item in plan.list %}
+                                    <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

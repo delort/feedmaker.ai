@@ -1,11 +1,13 @@
+{% set section = global.sections.articles %}
+
 <section class="articles">
     <div class="container">
-        {% if global.sections.articles.title %}
-            <h1 class="articles__title">{{ global.sections.articles.title }}</h1>
+        {% if section.title %}
+            <h1 class="articles__title">{{ section.title }}</h1>
         {% endif %}
-        {% if global.sections.articles.items|length %}
+        {% if section.items|length %}
             <div class="articles__items">
-                {% for item in global.sections.articles.items %}
+                {% for item in section.items %}
                     <article class="article">
                         <a href="{{ item.link }}" class="article__poster">
                             <img

@@ -1,30 +1,32 @@
+{% set section = global.sections.review %}
+
 <section class="review">
     <div class="container">
         <div class="review__content">
-            {% if global.sections.review.avatar.path %}
+            {% if section.avatar.path %}
                 <img
-                    src="{{ global.sections.review.avatar.path }}"
-                    alt="{{ global.sections.review.avatar.title ?? global.sections.review.author }}"
+                    src="{{ section.avatar.path }}"
+                    alt="{{ section.avatar.title ?? section.author }}"
                 />
             {% endif %}
             <div>
-                {% if global.sections.review.logo %}
+                {% if section.logo %}
                     <img
-                        src="{{ global.sections.review.logo.path }}"
-                        alt="{{ global.sections.review.logo.title ?? global.sections.review.author }}"
+                        src="{{ section.logo.path }}"
+                        alt="{{ section.logo.title ?? section.author }}"
                         height="25"
                     />
                 {% endif %}
-                {% if global.sections.review.content %}
+                {% if section.content %}
                     <div class="paragraph review__description">
-                        <p>{{ global.sections.review.content }}</p>
+                        <p>{{ section.content }}</p>
                     </div>
                 {% endif %}
-                {% if global.sections.review.author %}
-                    <h2 class="review__author">{{ global.sections.review.author }}</h2>
+                {% if section.author %}
+                    <h2 class="review__author">{{ section.author }}</h2>
                 {% endif %}
-                {% if global.sections.review.role %}
-                    <div class="review__role">{{ global.sections.review.role }}</div>
+                {% if section.role %}
+                    <div class="review__role">{{ section.role }}</div>
                 {% endif %}
             </div>
         </div>

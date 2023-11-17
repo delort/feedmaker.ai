@@ -1,16 +1,18 @@
+{% set section = global.sections.hero %}
+
 <section class="hero">
     <div class="container">
-        {% if global.sections.hero.title %}
-            <h1 class="hero__title">{{ global.sections.hero.title }}</h1>
+        {% if section.title %}
+            <h1 class="hero__title">{{ section.title }}</h1>
         {% endif %}
-        {% if global.sections.hero.description %}
+        {% if section.description %}
             <div class="paragraph hero__paragraph">
-                <p>{{ global.sections.hero.description }}</p>
+                <p>{{ section.description }}</p>
             </div>
         {% endif %}
-        {% if global.sections.hero.actions|length %}
+        {% if section.actions|length %}
             <div class="hero__actions">
-                {% for action in global.sections.hero.actions %}
+                {% for action in section.actions %}
                     <a href="{{ action.link }}" class="btn btn--{{ action.style }}">{{ action.label }}</a>
                 {% endfor %}
             </div>
@@ -30,14 +32,14 @@
         </svg>
     </div>
     <div class="container">
-        {% if global.sections.hero.logos_description %}
+        {% if section.logos_description %}
             <div class="paragraph">
-                <p>{{ global.sections.hero.logos_description }}</p>
+                <p>{{ section.logos_description }}</p>
             </div>
         {% endif %}
-        {% if global.sections.hero.logos|length %}
+        {% if section.logos|length %}
             <div class="hero__logos">
-                {% for logo in global.sections.hero.logos %}
+                {% for logo in section.logos %}
                     <img src="{{ logo.path }}" alt="Logo placeholder" />
                 {% endfor %}
             </div>

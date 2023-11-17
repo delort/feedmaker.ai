@@ -1,0 +1,26 @@
+.tabs {
+    display: inline-flex;
+
+    &__item {
+        @mixin reset-btn;
+        @mixin font-body-m;
+
+        cursor: pointer;
+    }
+
+    &--segment {
+        border-radius: var(--border-radius);
+        background-color: var(--color-gray);
+        padding: 3px;
+
+        ^&__item {
+            border-radius: var(--border-radius);
+            padding: 6px 28px;
+
+            &.is-active {
+                box-shadow: 0 1px 2px 0 var(--color-black-4);
+                background-color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.plans {
+    padding: 60px 0;
+    text-align: center;
+
+    &__title {
+        @mixin font-headline-xl;
+
+        margin: 0;
+    }
+
+    &_tabs {
+        position: relative;
+        margin: 24px auto 0;
+
+        &--caption {
+            &::before {
+                @media (--sm-up) {
+                    position: absolute;
+                    top: calc(50% - 11px / 2);
+                    left: calc(100% + 14px);
+                    background: url('data:image/svg+xml,<svg width="23" height="11" viewBox="0 0 23 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.98 0.819181C21.98 7.73203 9.97936 7.29671 5.48005 5.31919C4.20086 4.75696 -0.866498 3.78084 1.98006 3.31918C3.44179 3.08212 10.9203 1.52449 6.2645 2.88922C5.84964 3.01082 1.04309 3.64761 1.07918 3.87009C1.39528 5.81918 3.98001 7.31918 5.98001 9.31918" stroke="%2318A058" stroke-width="1.5" stroke-linecap="round"/></svg>');
+                    width: 23px;
+                    height: 11px;
+                    content: "";
+                }
+            }
+
+            &::after {
+                @media (--sm-up) {
+                    @mixin font-headline-xxxs;
+                    position: absolute;
+                    top: calc(50% - 24px);
+                    left: calc(100% + 20px);
+
+                    content: attr(data-caption);
+                    color: var(--color-primary);
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-gap: var(--container-gap);
+        margin-top: 24px;
+
+        @media (--lg-up) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

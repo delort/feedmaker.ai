@@ -338,6 +338,72 @@
             "author": "Jennifer E. Allison",
             "role": "Chief Marketing Officer at Logoipsum"
         },
+        "plans": {
+            "title": "Plans and pricing",
+            "caption": "Save 33%",
+            "items": [
+                {
+                    "title": "Free",
+                    "prices": [0, 0],
+                    "actions": [
+                        {
+                            "link": "#",
+                            "label": "Get started",
+                            "style": "secondary"
+                        }
+                    ],
+                    "list": [
+                        "250+ free templates",
+                        "1GB cloud storage",
+                        "Design types templates: social media post and stories, presentations, banners and more",
+                        "Free photos and graphics",
+                        "Animate objects"
+                    ]
+                },
+                {
+                    "title": "Professional",
+                    "prices": [59, 699],
+                    "actions": [
+                        {
+                            "link": "#",
+                            "label": "Try 7 days for free",
+                            "style": "primary"
+                        }
+                    ],
+                    "caption": "Best bundle",
+                    "list": [
+                        "250+ free templates",
+                        "1GB cloud storage",
+                        "Design types templates: social media post and stories, presentations, banners and more",
+                        "Free photos and graphics",
+                        "Animate objects",
+                        "Background removing feature"
+                    ]
+                },
+                {
+                    "title": "Enterprise",
+                    "prices": [99, 1089],
+                    "actions": [
+                        {
+                            "link": "#",
+                            "label": "Try 7 days for free",
+                            "style": "primary"
+                        }
+                    ],
+                    "list": [
+                        "250+ free templates",
+                        "1GB cloud storage",
+                        "Design types templates: social media post and stories, presentations, banners and more",
+                        "Free photos and graphics",
+                        "Animate objects",
+                        "Thousands of premium design templates",
+                        "Background removing feature",
+                        "Schedule post",
+                        "Promote post"
+                    ]
+                }
+            ]
+        },
         "articles": {
             "title": "You may also be interested in",
             "items": [
