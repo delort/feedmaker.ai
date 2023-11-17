@@ -1,11 +1,25 @@
 .tabs {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
 
     &__item {
         @mixin reset-btn;
         @mixin font-body-m;
 
         cursor: pointer;
+        margin: 15px;
+        padding: 0 0 3px;
+
+        &.is-active {
+            box-shadow: inset 0 -2px 0 0 var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        &:hover {
+            color: var(--color-primary);
+        }
     }
 
     &--segment {
@@ -14,6 +28,7 @@
         padding: 3px;
 
         ^&__item {
+            margin: 0;
             border-radius: var(--border-radius);
             padding: 6px 28px;
 
@@ -21,6 +36,12 @@
                 box-shadow: 0 1px 2px 0 var(--color-black-4);
                 background-color: white;
             }
+        }
+    }
+
+    &-content {
+        > *:not(.is-active) {
+            display: none;
         }
     }
 }

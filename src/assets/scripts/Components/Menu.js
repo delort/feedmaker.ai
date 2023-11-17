@@ -1,14 +1,16 @@
-export function setupMenu(menus) {
-    if (!menus || !menus.length) return;
+export function setupMenu() {
+    const el = document.querySelectorAll('[data-menu]');
 
-    for (let i = 0; i < menus.length; i++) {
-        const menuName = menus[i].dataset.menu;
+    if (!el || !el.length) return;
+
+    for (let i = 0; i < el.length; i++) {
+        const menuName = el[i].dataset.menu;
         const menuTriggers = document.querySelectorAll(
             `[data-menu-trigger=${menuName}]`,
         );
 
         const handleToggleMenu = () => {
-            menus[i].classList.toggle('is-active');
+            el[i].classList.toggle('is-active');
         };
 
         menuTriggers.forEach((trigger) =>

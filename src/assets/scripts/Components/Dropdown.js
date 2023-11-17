@@ -1,20 +1,22 @@
-export function setupDropdown(dropdowns) {
-    if (!dropdowns || !dropdowns.length) return;
+export function setupDropdown() {
+    const el = document.querySelectorAll('[data-dropdown]');
 
-    for (let i = 0; i < dropdowns.length; i++) {
-        const dropdownTrigger = dropdowns[i].querySelector(`button`);
+    if (!el || !el.length) return;
+
+    for (let i = 0; i < el.length; i++) {
+        const dropdownTrigger = el[i].querySelector(`button`);
 
         const handleToggleDropdown = () => {
-            dropdowns[i].classList.toggle('is-active');
+            el[i].classList.toggle('is-active');
         };
 
         dropdownTrigger.addEventListener('click', handleToggleDropdown);
 
         document.addEventListener('click', (event) => {
-            const isClickInside = dropdowns[i].contains(event.target);
+            const isClickInside = el[i].contains(event.target);
 
             if (!isClickInside) {
-                dropdowns[i].classList.remove('is-active');
+                el[i].classList.remove('is-active');
             }
         });
     }

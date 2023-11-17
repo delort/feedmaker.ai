@@ -327,6 +327,121 @@
                 }
             ]
         },
+        "advantages": {
+            "title": "Make beautiful social media content",
+            "tabs": [
+                {
+                    "tab": "Design",
+                    "title": "Create design, animate objects, use AI assistant",
+                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                    "list": [
+                        {
+                            "icon": "grid",
+                            "title": "1K+ Professionally-designed templates"
+                        },
+                        {
+                            "icon": "layers",
+                            "title": "Large library of design elements"
+                        },
+                        {
+                            "icon": "wand",
+                            "title": "Remove BG in one click"
+                        }
+                    ],
+                    "image": {
+                        "path": "images/illustrations/design.png"
+                    }
+                },
+                {
+                    "tab": "Animation",
+                    "title": "Create design, animate objects, use AI assistant",
+                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                    "list": [
+                        {
+                            "icon": "grid",
+                            "title": "1K+ Professionally-designed templates"
+                        },
+                        {
+                            "icon": "layers",
+                            "title": "Large library of design elements"
+                        },
+                        {
+                            "icon": "wand",
+                            "title": "Remove BG in one click"
+                        }
+                    ],
+                    "image": {
+                        "path": "images/illustrations/animation.png"
+                    }
+                },
+                {
+                    "tab": "AI assistant",
+                    "title": "Create design, animate objects, use AI assistant",
+                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                    "list": [
+                        {
+                            "icon": "grid",
+                            "title": "1K+ Professionally-designed templates"
+                        },
+                        {
+                            "icon": "layers",
+                            "title": "Large library of design elements"
+                        },
+                        {
+                            "icon": "wand",
+                            "title": "Remove BG in one click"
+                        }
+                    ],
+                    "image": {
+                        "path": "images/illustrations/ai-assistant.png"
+                    }
+                },
+                {
+                    "tab": "Schedule Publishing",
+                    "title": "Create design, animate objects, use AI assistant",
+                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                    "list": [
+                        {
+                            "icon": "grid",
+                            "title": "1K+ Professionally-designed templates"
+                        },
+                        {
+                            "icon": "layers",
+                            "title": "Large library of design elements"
+                        },
+                        {
+                            "icon": "wand",
+                            "title": "Remove BG in one click"
+                        }
+                    ],
+                    "image": {
+                        "path": "images/illustrations/schedule-post.png"
+                    }
+                },
+                {
+                    "tab": "Ad Campaigns",
+                    "title": "Create design, animate objects, use AI assistant",
+                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                    "list": [
+                        {
+                            "icon": "grid",
+                            "title": "1K+ Professionally-designed templates"
+                        },
+                        {
+                            "icon": "layers",
+                            "title": "Large library of design elements"
+                        },
+                        {
+                            "icon": "wand",
+                            "title": "Remove BG in one click"
+                        }
+                    ],
+                    "image": {
+                        "path": "images/illustrations/ad-campaigns.png"
+                    }
+                }
+            ]
+        },
         "review": {
             "avatar": {
                 "path": "images/avatar.jpg"

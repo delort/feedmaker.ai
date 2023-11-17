@@ -1,14 +1,14 @@
-export function setupPlans() {
-    const el = document.querySelectorAll('[data-plan]');
+export function setupTabs() {
+    const el = document.querySelectorAll('[data-tabs]');
 
     if (!el || !el.length) return;
 
     for (let i = 0; i < el.length; i++) {
         let activeIndex = 0;
-        const name = el[i].dataset.plan;
+        const name = el[i].dataset.tabs;
         const tabs = el[i].querySelectorAll('button');
-        const content = document.querySelector(`[data-plan-content=${name}]`);
-        const switchers = content?.querySelectorAll('[data-plan-switch]') || [];
+        const content = document.querySelector(`[data-tabs-content=${name}]`);
+        const tabContents = content?.querySelectorAll(':scope > *') || [];
 
         const toggleTabsActive = () => {
             tabs.forEach((tab, index) => {
@@ -19,10 +19,12 @@ export function setupPlans() {
                 }
             });
 
-            switchers.forEach((item) => {
-                const values = JSON.parse(item.dataset.planSwitch);
-
-                item.innerText = values[activeIndex];
+            tabContents.forEach((content, index) => {
+                if (index === activeIndex) {
+                    content.classList.add('is-active');
+                } else {
+                    content.classList.remove('is-active');
+                }
             });
         };
 
