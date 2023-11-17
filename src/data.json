@@ -327,6 +327,17 @@
                 }
             ]
         },
+        "review": {
+            "avatar": {
+                "path": "images/avatar.jpg"
+            },
+            "logo": {
+                "path": "images/logos/1.svg"
+            },
+            "content": "Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit",
+            "author": "Jennifer E. Allison",
+            "role": "Chief Marketing Officer at Logoipsum"
+        },
         "articles": {
             "title": "You may also be interested in",
             "items": [

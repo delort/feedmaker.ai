@@ -1,0 +1,32 @@
+<section class="review">
+    <div class="container">
+        <div class="review__content">
+            {% if global.sections.review.avatar.path %}
+                <img
+                    src="{{ global.sections.review.avatar.path }}"
+                    alt="{{ global.sections.review.avatar.title ?? global.sections.review.author }}"
+                />
+            {% endif %}
+            <div>
+                {% if global.sections.review.logo %}
+                    <img
+                        src="{{ global.sections.review.logo.path }}"
+                        alt="{{ global.sections.review.logo.title ?? global.sections.review.author }}"
+                        height="25"
+                    />
+                {% endif %}
+                {% if global.sections.review.content %}
+                    <div class="paragraph review__description">
+                        <p>{{ global.sections.review.content }}</p>
+                    </div>
+                {% endif %}
+                {% if global.sections.review.author %}
+                    <h2 class="review__author">{{ global.sections.review.author }}</h2>
+                {% endif %}
+                {% if global.sections.review.role %}
+                    <div class="review__role">{{ global.sections.review.role }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

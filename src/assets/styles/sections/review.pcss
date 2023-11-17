@@ -1,0 +1,42 @@
+.review {
+    padding: 60px 0;
+
+    &__content {
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        grid-gap: 40px;
+        justify-items: center;
+        text-align: center;
+
+        @media (--sm-up) {
+            grid-template-columns: 160px auto;
+            justify-items: initial;
+            text-align: initial;
+        }
+    }
+
+    &__avatar {
+        border-radius: var(--border-radius);
+        overflow: hidden;
+    }
+
+    &__description {
+        @mixin font-body-l;
+
+        margin-top: 24px;
+    }
+
+    &__author {
+        @mixin font-body-m;
+
+        margin: 18px 0 0;
+        font-weight: bold;
+    }
+
+    &__role {
+        margin-top: 4px;
+        color: var(--color-black-6);
+    }
+}
