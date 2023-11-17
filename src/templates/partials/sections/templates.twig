@@ -1,0 +1,32 @@
+{% set section = global.sections.templates %}
+
+<section class="templates">
+    <div class="container">
+        {% if section.title %}
+            <h2 class="templates__title">{{ section.title }}</h2>
+        {% endif %}
+        {% if section.tags|length %}
+            <ul class="templates__tags">
+                {% for tag in section.tags %}
+                    <li>{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <div class="templates__list">
+            {% for template in section.list %}
+                <div class="templates__item">
+                    <img src="{{ template.image.path }}" alt="{{ template.image.title }}" />
+                    <a class="btn btn--primary" href="{{ template.link }}" target="_blank">
+                        <svg class="icon icon--size-20 btn_icon" aria-hidden="true">
+                            <use xlink:href="/images/sprite.svg#pencil"></use>
+                        </svg>
+                        Edit
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        {% for btn in section.actions %}
+            <a href="{{ btn.link }}" class="btn btn--{{ btn.style }}" target="_blank">{{ btn.label }}</a>
+        {% endfor %}
+    </div>
+</section>

@@ -442,6 +442,109 @@
                 }
             ]
         },
+        "templates": {
+            "title": "Templates for absolutely anything",
+            "tags": [
+                "Social media posts and stories",
+                "Banners",
+                "Letters",
+                "Flyer",
+                "Presentations"
+            ],
+            "list": [
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                },
+                {
+                    "link": "#",
+                    "image": {
+                        "path": "images/hero-template.png"
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "link": "#",
+                    "label": "See more designs",
+                    "style": "secondary"
+                }
+            ]
+        },
         "review": {
             "avatar": {
                 "path": "images/avatar.jpg"
