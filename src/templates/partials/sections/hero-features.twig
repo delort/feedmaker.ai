@@ -1,0 +1,21 @@
+{% set section = global.sections.hero_features %}
+
+<section class="hero hero--features">
+    <div class="container">
+        {% if section.title %}
+            <h1 class="hero__title">{{ section.title }}</h1>
+        {% endif %}
+        {% if section.description %}
+            <div class="paragraph hero__paragraph">
+                <p>{{ section.description }}</p>
+            </div>
+        {% endif %}
+        {% if section.actions|length %}
+            <div class="hero__actions">
+                {% for action in section.actions %}
+                    <a href="{{ action.link }}" class="btn btn--{{ action.style }}">{{ action.label }}</a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

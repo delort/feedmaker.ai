@@ -327,6 +327,17 @@
                 }
             ]
         },
+        "hero_features": {
+            "title": "Explore our awesome features",
+            "description": "Unlock your creativity with Feedmaker's full suite of features and abundant content. Effortlessly customize our templates in a matter of minutes or craft your own stunning creations with ease.",
+            "actions": [
+                {
+                    "link": "#",
+                    "label": "Create a Design",
+                    "style": "primary"
+                }
+            ]
+        },
         "advantages": {
             "title": "Make beautiful social media content",
             "tabs": [
