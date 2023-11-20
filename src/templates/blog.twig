@@ -1,0 +1,61 @@
+{% extends 'root::layouts/inner.twig' %}
+
+{% block page %}
+    <div class="blog">
+        <div class="tabs blog_tabs">
+            <a class="tabs__item is-active">All</a>
+            <a class="tabs__item">Sales</a>
+            <a class="tabs__item">Team</a>
+            <a class="tabs__item">Design tips</a>
+            <a class="tabs__item">Company</a>
+        </div>
+        <div class="blog__articles">
+            {% if global.articles|length %}
+                {% for item in global.articles %}
+                    <article class="article-short">
+                        <a href="{{ item.link }}" class="article-short__poster">
+                            <img
+                                src="{{ item.image.path }}" alt="{{ item.image.title ?? item.title }}"
+                            />
+                        </a>
+                        <div class="article-short__categories">
+                            <a href="#">Team</a>
+                        </div>
+                        <a href="{{ item.link }}" class="article-short__title">{{ item.title }}</a>
+                    </article>
+                {% endfor %}
+                {% else %}
+                <div class="paragraph">
+                    <p>No posts</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="pagination blog_pagination">
+            <button class="btn btn--outline btn--icon" type="button" disabled>
+                <svg class="icon icon--size-18" aria-hidden="true">
+                    <use xlink:href="/images/sprite.svg#chevron_left"></use>
+                </svg>
+            </button>
+            <button class="btn btn--icon is-active" type="button">
+                1
+            </button>
+            <button class="btn btn--icon" type="button">
+                2
+            </button>
+            <button class="btn btn--icon" type="button">
+                3
+            </button>
+            <span class="pagination__dots">
+                ...
+            </span>
+            <button class="btn btn--icon" type="button">
+                99
+            </button>
+            <button class="btn btn--outline btn--icon" type="button">
+                <svg class="icon icon--size-18" aria-hidden="true">
+                    <use xlink:href="/images/sprite.svg#chevron_right"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+{% endblock %}

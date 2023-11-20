@@ -1,0 +1,23 @@
+.breadcrumbs {
+    @mixin font-body-s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 24px 0;
+    color: var(--color-black-6);
+
+    > *:not(:last-child) {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 12px;
+
+        &::after {
+            margin-left: 12px;
+            background-image: url('data:image/svg+xml,<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><path d="M5.05554 3.61114L8.94443 7.50003L5.05554 11.3889" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+            width: 14px;
+            height: 14px;
+            content: "";
+        }
+    }
+}

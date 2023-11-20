@@ -1,0 +1,33 @@
+.page {
+    padding: 60px 0;
+
+    @media (--lg-up) {
+        padding-top: 120px;
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: var(--container-gap);
+        grid-row-gap: 40px;
+        margin-bottom: 40px;
+
+        > * {
+            grid-column: 1 / -1;
+            margin: 0;
+
+            @media (--lg-up) {
+                grid-column: 1 / 9;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__description {
+        margin-top: 18px;
+        color: var(--color-black-6);
+    }
+}

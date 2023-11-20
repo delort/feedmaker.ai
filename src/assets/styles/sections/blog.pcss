@@ -1,0 +1,17 @@
+.blog {
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+        margin-top: 40px;
+        grid-column-gap: var(--container-gap);
+        grid-row-gap: 40px;
+
+        @media (--lg-up) {
+            grid-row-gap: 80px;
+        }
+    }
+
+    &_pagination {
+        margin-top: 60px;
+    }
+}

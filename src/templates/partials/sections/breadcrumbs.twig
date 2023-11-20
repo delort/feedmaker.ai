@@ -1,0 +1,10 @@
+<section>
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            {% for item in breadcrumbs %}
+                <li><a href="{{ item.link }}">{{ item.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

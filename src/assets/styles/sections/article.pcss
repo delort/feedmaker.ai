@@ -1,0 +1,206 @@
+.article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: var(--container-gap);
+    grid-row-gap: 40px;
+
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+
+    &__main {
+        grid-column: 1 / -1;
+
+        @media (--lg-up) {
+            grid-column: 1 / 9;
+        }
+
+        img {
+            border-radius: var(--border-radius);
+        }
+    }
+
+    &__banner {
+        margin-bottom: 40px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        .fr-fic {
+            margin: 16px 0;
+            max-width: 100%;
+
+            &.fr-img-caption {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .fr-img-wrap {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .fr-inner {
+            @mixin font-body-s;
+
+            display: inline-block;
+            padding-top: 6px;
+            width: 100%;
+            color: var(--color-black-6);
+        }
+
+        p {
+            a {
+                display: inline;
+                color: var(--color-primary);
+
+                &:hover {
+                    color: var(--color-primary-darken);
+                }
+            }
+        }
+
+        ul,
+        ol {
+            list-style: inside;
+
+            li {
+                margin: 14px 0;
+            }
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+    }
+
+    &__sidebar {
+        display: grid;
+        align-items: flex-start;
+        grid-column-gap: var(--container-gap);
+        grid-column: 1 / -1;
+
+        @media (--md-up) {
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (--lg-up) {
+            display: block;
+            grid-column: 9 / 13;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+    }
+
+    &__bring {
+        display: none;
+        margin-bottom: 40px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        padding: 24px 24px 0;
+
+        @media (--sm-up) {
+            grid-row: span 3;
+        }
+
+        @media (--md-up) {
+            display: block;
+        }
+
+        > *:not(:first-child) {
+            margin-top: 18px;
+        }
+
+        img {
+            margin-top: 24px;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -5px;
+
+        @media (--lg-up) {
+            border-width: 1px 0 1px 0;
+            border-style: solid;
+            border-color: var(--color-border);
+            padding: 31px 0;
+        }
+
+        > * {
+            margin: 5px;
+            border-radius: var(--border-radius);
+            background-color: var(--color-black-4);
+            padding: 5px 12px;
+
+            @media (--lg-up) {
+                padding: 9px 12px;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -5px;
+        padding: 24px 0;
+
+        @media (--lg-up) {
+            padding: 40px 0;
+        }
+
+        > * {
+            margin: 5px;
+        }
+    }
+
+    &__subscribe {
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius);
+        padding: 24px;
+
+        > *:first-child {
+            margin-bottom: 18px;
+        }
+    }
+
+    &_articles {
+        grid-column: 1 / -1;
+        padding: 0;
+
+        @media (--lg-up) {
+            grid-row: 3;
+        }
+
+        .articles {
+            &__title {
+                @mixin font-headline-s;
+
+                margin: 0;
+                text-align: initial;
+            }
+
+            &__items {
+                @media (--sm-up) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (--lg-up) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        }
+    }
+}

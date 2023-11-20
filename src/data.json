@@ -292,6 +292,98 @@
             "code": "instagram"
         }
     ],
+    "articles": [
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        },
+        {
+            "link": "/article.html",
+            "image": {
+                "path": "images/article.jpg"
+            },
+            "category": {
+                "title": "Team"
+            },
+            "title": "Maecenas a tortor a orci vestibulum blandit."
+        }
+    ],
     "sections": {
         "hero": {
             "title": "Design Social Media Ads and Posts Using AI",
@@ -308,7 +400,7 @@
                     "style": "primary"
                 }
             ],
-            "logos_description": "Trusted by big-time companies, who win big-time revenue",
+            "logosDescription": "Trusted by big-time companies, who win big-time revenue",
             "logos": [
                 {
                     "path": "images/logos/1.svg"
@@ -327,7 +419,7 @@
                 }
             ]
         },
-        "hero_features": {
+        "heroFeatures": {
             "title": "Explore our awesome features",
             "description": "Unlock your creativity with Feedmaker's full suite of features and abundant content. Effortlessly customize our templates in a matter of minutes or craft your own stunning creations with ease.",
             "actions": [
@@ -634,8 +726,26 @@
             ]
         },
         "articles": {
-            "title": "You may also be interested in",
-            "items": [
+            "title": "You may also be interested in"
+        },
+        "article": {
+            "title": "Connect with Feedmaker for Education at ISTELive 21",
+            "tags": ["Students", "School project", "Education", "Templates"],
+            "banner": {
+                "path": "https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg"
+            },
+            "content": "<p>Save the date — ISTELive is coming on June 26-30, 2021! This year’s theme is “Designing a New Learning Landscape”. Education experts from around the world will <a href=\"#\">share inspiring stories</a> about how edtech innovation can change lives and improve learning, as well as learn from each other and support student growth.</p><p>It’s no wonder then that they’re such a fantastic interactive educational tool.</p><h2>Why use comic strips?</h2><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><ol><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ol><p>As well as being simple, good comic strips use color sparingly, they ensure any text is easy to read, and they make sure illustrations, especially facial expressions, are easy to interpret and understand.</p><p>All these are really easy for children to understand and use, which means great comic strips are well within their grasp.</p><p><span class=\"fr-img-caption fr-fic fr-dii\" style=\"width:695px\"><span class=\"fr-img-wrap\"><img src=\"https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg\"><span class=\"fr-inner\" data-gramm=\"false\" data-lt-tmp-id=\"lt-983701\" spellcheck=\"false\">Find all of color templates in Fedmaker</span></span></span></p><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><h3>Why use comic strips?</h3><ul><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ul><h4>Why use comic strips?</h4>",
+            "related": [
+                {
+                    "link": "/article.html",
+                    "image": {
+                        "path": "images/article.jpg"
+                    },
+                    "category": {
+                        "title": "Team"
+                    },
+                    "title": "Maecenas a tortor a orci vestibulum blandit."
+                },
                 {
                     "link": "/article.html",
                     "image": {

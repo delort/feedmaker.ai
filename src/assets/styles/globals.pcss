@@ -14,12 +14,47 @@ body {
     font-family: var(--font-primary);
 }
 
-:--heading {
+h1 {
+    @mixin font-headline-xl;
+}
+
+h2 {
+    @mixin font-headline-l;
+}
+
+h3 {
+    @mixin font-headline-m;
+}
+
+h4 {
+    @mixin font-headline-s;
 }
 
 input {
+    @mixin reset-input;
+    @mixin font-body-m;
+    border: 1px solid var(--color-field-border);
+    border-radius: var(--border-radius);
+
+    padding: 8px 12px;
+
     &::placeholder {
         color: var(--color-text-gray);
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+
+    input {
+        flex-grow: 1;
+        width: auto;
+    }
+
+    > * {
+        margin: 4px !important;
     }
 }
 
@@ -57,7 +92,15 @@ a {
     @mixin font-body-m;
 
     > * {
-        margin: 0;
+        margin: 24px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

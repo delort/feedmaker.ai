@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'root::partials/head.twig' %}
+    </head>
+    <body class="layout">
+        {% include 'root::partials/header.twig' %}
+
+        {% include 'root::partials/sections/breadcrumbs.twig' with { items: breadcrumbs } %}
+
+        <main class="page">
+            <div class="container">
+                <div class="page__header">
+                    <div>
+                        {% if title %}
+                            <h1 class="page__title">{{ title }}</h1>
+                        {% endif %}
+                        {% if description %}
+                            <div class="page__description">
+                                <div class="paragraph">
+                                    <p>{{ description }}</p>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% block page %}{% endblock %}
+            </div>
+        </main>
+
+        {% include 'root::partials/footer.twig' %}
+
+        <script type="module" src="/assets/scripts/main.js"></script>
+    </body>
+</html>

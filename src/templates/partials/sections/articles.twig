@@ -3,21 +3,21 @@
 <section class="articles">
     <div class="container">
         {% if section.title %}
-            <h1 class="articles__title">{{ section.title }}</h1>
+            <h2 class="articles__title">{{ section.title }}</h2>
         {% endif %}
-        {% if section.items|length %}
+        {% if global.articles|length %}
             <div class="articles__items">
-                {% for item in section.items %}
-                    <article class="article">
-                        <a href="{{ item.link }}" class="article__poster">
+                {% for item in global.articles|slice(0, 3) %}
+                    <article class="article-short">
+                        <a href="{{ item.link }}" class="article-short__poster">
                             <img
                                 src="{{ item.image.path }}" alt="{{ item.image.title ?? item.title }}"
                             />
                         </a>
-                        <div class="article__categories">
+                        <div class="article-short__categories">
                             <a href="#">Team</a>
                         </div>
-                        <a href="{{ item.link }}" class="article__title">{{ item.title }}</a>
+                        <a href="{{ item.link }}" class="article-short__title">{{ item.title }}</a>
                     </article>
                 {% endfor %}
             </div>
