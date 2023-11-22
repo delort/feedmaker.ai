@@ -163,7 +163,7 @@
             "label": "Company",
             "items": [
                 {
-                    "link": "#",
+                    "link": "/about.html",
                     "label": "About"
                 },
                 {
@@ -241,7 +241,7 @@
                     "label": "Design Ideas"
                 },
                 {
-                    "link": "#",
+                    "link": "/blog.html",
                     "label": "Blog"
                 }
             ]
@@ -385,8 +385,9 @@
         }
     ],
     "home": {
-        "sections": {
-            "hero": {
+        "sections": [
+            {
+                "section": "hero",
                 "title": "Design Social Media Ads and Posts Using AI",
                 "description": "Start by selecting a template from the gallery",
                 "actions": [
@@ -420,7 +421,8 @@
                     }
                 ]
             },
-            "advantages": {
+            {
+                "section": "advantages",
                 "title": "Make beautiful social media content",
                 "tabs": [
                     {
@@ -535,7 +537,8 @@
                     }
                 ]
             },
-            "templates": {
+            {
+                "section": "templates",
                 "title": "Templates for absolutely anything",
                 "tags": [
                     "Social media posts and stories",
@@ -638,7 +641,8 @@
                     }
                 ]
             },
-            "review": {
+            {
+                "section": "review",
                 "avatar": {
                     "path": "images/avatar.jpg"
                 },
@@ -649,7 +653,8 @@
                 "author": "Jennifer E. Allison",
                 "role": "Chief Marketing Officer at Logoipsum"
             },
-            "plans": {
+            {
+                "section": "plans",
                 "title": "Plans and pricing",
                 "caption": "Save 33%",
                 "items": [
@@ -715,14 +720,16 @@
                     }
                 ]
             },
-            "articles": {
+            {
+                "section": "articles",
                 "title": "You may also be interested in"
             }
-        }
+        ]
     },
     "features": {
-        "sections": {
-            "hero_features": {
+        "sections": [
+            {
+                "section": "hero_features",
                 "title": "Explore our awesome features",
                 "description": "Unlock your creativity with Feedmaker's full suite of features and abundant content. Effortlessly customize our templates in a matter of minutes or craft your own stunning creations with ease.",
                 "actions": [
@@ -733,7 +740,8 @@
                     }
                 ]
             },
-            "advantages": {
+            {
+                "section": "advantages",
                 "title": "Make beautiful social media content",
                 "tabs": [
                     {
@@ -848,48 +856,61 @@
                     }
                 ]
             },
-            "articles": {
+            {
+                "section": "articles",
                 "title": "You may also be interested in"
             }
-        }
+        ]
     },
     "about": {
-        "sections": {
-            "hero": {
-                "title": "Design Social Media Ads and Posts Using AI",
-                "description": "Start by selecting a template from the gallery",
-                "actions": [
+        "sections": [
+            {
+                "section": "2_cols",
+                "title": "Brought together by a shared passion for design",
+                "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
+                "advantages": [
                     {
-                        "link": "/pricing.html",
-                        "label": "Pricing",
-                        "style": "secondary"
+                        "title": "145K+",
+                        "description": "Designs created"
                     },
                     {
-                        "link": "#",
-                        "label": "Create Now",
-                        "style": "primary"
+                        "title": "190",
+                        "description": "Countries"
+                    },
+                    {
+                        "title": "10",
+                        "description": "Languages"
                     }
                 ],
-                "logos_description": "Trusted by big-time companies, who win big-time revenue",
-                "logos": [
+                "image": {
+                    "path": "images/about-bg.png"
+                },
+                "position": "left"
+            },
+            {
+                "section": "2_cols",
+                "title": "Brought together by a shared passion for design",
+                "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
+                "advantages": [
                     {
-                        "path": "images/logos/1.svg"
+                        "title": "145K+",
+                        "description": "Designs created"
                     },
                     {
-                        "path": "images/logos/2.svg"
+                        "title": "190",
+                        "description": "Countries"
                     },
                     {
-                        "path": "images/logos/3.svg"
-                    },
-                    {
-                        "path": "images/logos/4.svg"
-                    },
-                    {
-                        "path": "images/logos/5.svg"
+                        "title": "10",
+                        "description": "Languages"
                     }
-                ]
+                ],
+                "image": {
+                    "path": "images/about-bg.png"
+                },
+                "position": "right"
             }
-        }
+        ]
     },
     "article": {
         "title": "Connect with Feedmaker for Education at ISTELive 21",

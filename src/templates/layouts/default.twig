@@ -7,8 +7,8 @@
         {% include 'root::partials/header.twig' %}
 
         {% block page %}
-            {% for key, data in global[page].sections %}
-                {% include 'root::partials/sections/' ~ key ~ '.twig' with data %}
+            {% for data in global[page].sections %}
+                {% include 'root::partials/sections/' ~ data.section ~ '.twig' with data %}
             {% endfor %}
         {% endblock %}
 
