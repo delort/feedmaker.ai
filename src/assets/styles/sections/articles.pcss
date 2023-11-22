@@ -18,6 +18,10 @@
         margin-top: 40px;
         grid-gap: var(--container-gap);
 
+        @media (--sm-up) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         @media (--lg-up) {
             grid-template-columns: repeat(3, 1fr);
         }

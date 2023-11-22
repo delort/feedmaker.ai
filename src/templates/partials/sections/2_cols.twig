@@ -1,9 +1,31 @@
-{% set section = data %}
-
-<section class="cols">
+<section class="cols {{ data.position ? 'cols--' ~ data.position : '' }}">
     <div class="container">
-        {% if section.title %}
-            <h2 class="advantages__title">{{ section.title }}</h2>
-        {% endif %}
+        <div class="cols__content">
+            <div class="cols__text">
+                {% if data.title %}
+                    <h2 class="cols__title">{{ data.title }}</h2>
+                {% endif %}
+                {% if data.description %}
+                    <div class="paragraph cols__description">
+                        <p>{{ data.description }}</p>
+                    </div>
+                {% endif %}
+                {% if data.advantages|length %}
+                    <div class="cols__advantages">
+                        {% for item in data.advantages %}
+                            <div class="advantage">
+                                <h3 class="advantage__title">{{ item.title }}</h3>
+                                <div class="advantage__description">{{ item.description }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="cols__image">
+                {% if data.image %}
+                    <img src="{{ data.image.path }}" alt="{{ data.image.title ?? data.title }}">
+                {% endif %}
+            </div>
+        </div>
     </div>
 </section>

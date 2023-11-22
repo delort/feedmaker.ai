@@ -1,21 +1,19 @@
-{% set section = data %}
-
 <section class="plans">
     <div class="container">
-        {% if section.title %}
-            <h2 class="plans__title">{{ section.title }}</h2>
+        {% if data.title %}
+            <h2 class="plans__title">{{ data.title }}</h2>
         {% endif %}
-        {% if section.items|length %}
+        {% if data.items|length %}
             <div
-                class="tabs tabs--segment plans_tabs {{ section.caption ? 'plans_tabs--caption' : '' }}"
-                data-caption="{{ section.caption }}"
+                class="tabs tabs--segment plans_tabs {{ data.caption ? 'plans_tabs--caption' : '' }}"
+                data-caption="{{ data.caption }}"
                 data-plan="plan"
             >
                 <button class="tabs__item is-active" type="button">Monthly</button>
                 <button class="tabs__item" type="button">Yearly</button>
             </div>
             <div class="plans__cards" data-plan-content="plan">
-                {% for plan in section.items %}
+                {% for plan in data.items %}
                     <div class="card {{ plan.caption ? 'card--caption' : '' }}">
                         {% if plan.caption %}
                             <div class="card__caption">{{ plan.caption }}</div>

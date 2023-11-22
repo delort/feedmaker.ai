@@ -1,19 +1,17 @@
-{% set section = data %}
-
 <section class="templates">
     <div class="container">
-        {% if section.title %}
-            <h2 class="templates__title">{{ section.title }}</h2>
+        {% if data.title %}
+            <h2 class="templates__title">{{ data.title }}</h2>
         {% endif %}
-        {% if section.tags|length %}
+        {% if data.tags|length %}
             <ul class="templates__tags">
-                {% for tag in section.tags %}
+                {% for tag in data.tags %}
                     <li>{{ tag }}</li>
                 {% endfor %}
             </ul>
         {% endif %}
         <div class="templates__list">
-            {% for template in section.list %}
+            {% for template in data.list %}
                 <div class="templates__item">
                     <img src="{{ template.image.path }}" alt="{{ template.image.title }}" />
                     <a class="btn btn--primary" href="{{ template.link }}" target="_blank">
@@ -25,7 +23,7 @@
                 </div>
             {% endfor %}
         </div>
-        {% for btn in section.actions %}
+        {% for btn in data.actions %}
             <a href="{{ btn.link }}" class="btn btn--{{ btn.style }}" target="_blank">{{ btn.label }}</a>
         {% endfor %}
     </div>

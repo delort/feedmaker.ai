@@ -1,0 +1,27 @@
+.advantage {
+    border-bottom: 1px solid var(--color-border);
+    padding: 12px 0;
+    color: var(--color-secondary);
+    text-align: center;
+
+    &__title {
+        @mixin font-headline-m;
+
+        margin: 0;
+    }
+
+    &__description {
+        @mixin font-headline-xxxs;
+
+        margin-top: 6px;
+    }
+
+    &:hover {
+        border-color: var(--color-secondary);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            #f3f9ff 100%
+        );
+    }
+}

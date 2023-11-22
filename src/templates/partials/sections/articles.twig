@@ -1,9 +1,7 @@
-{% set section = data %}
-
 <section class="articles">
     <div class="container">
-        {% if section.title %}
-            <h2 class="articles__title">{{ section.title }}</h2>
+        {% if data.title %}
+            <h2 class="articles__title">{{ data.title }}</h2>
         {% endif %}
         {% if global.articles|length %}
             <div class="articles__items">

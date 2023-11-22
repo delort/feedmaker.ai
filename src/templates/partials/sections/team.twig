@@ -1,0 +1,31 @@
+<section class="team">
+    <div class="container">
+        {% if data.title %}
+            <h2 class="team__title">{{ data.title }}</h2>
+        {% endif %}
+        {% if data.description %}
+            <div class="paragraph team__description">
+                <p>{{ data.description }}</p>
+            </div>
+        {% endif %}
+        {% if data.team|length %}
+            <div class="team__content">
+                {% for item in data.team %}
+                    <div>
+                        {% if item.avatar %}
+                            <div class="team__avatar">
+                                <img src="{{ item.avatar.path }}" alt="{{ item.avatar.title ?? item.name }}" />
+                            </div>
+                        {% endif %}
+                        {% if item.name %}
+                            <h3 class="team__name">{{ item.name }}</h3>
+                        {% endif %}
+                        {% if item.role %}
+                            <div class="team__role">{{ item.role }}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

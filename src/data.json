@@ -889,26 +889,65 @@
             },
             {
                 "section": "2_cols",
-                "title": "Brought together by a shared passion for design",
-                "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
-                "advantages": [
-                    {
-                        "title": "145K+",
-                        "description": "Designs created"
-                    },
-                    {
-                        "title": "190",
-                        "description": "Countries"
-                    },
-                    {
-                        "title": "10",
-                        "description": "Languages"
-                    }
-                ],
+                "title": "Our mission",
+                "description": "Founded in 2023, Feedmaker is an online design and visual communication platform that is driven by a mission to enable individuals worldwide to design anything and share it across various platforms.",
                 "image": {
-                    "path": "images/about-bg.png"
+                    "path": "images/illustrations/design.png"
                 },
                 "position": "right"
+            },
+            {
+                "section": "team",
+                "title": "Leadership",
+                "description": "We count ourselves lucky to have a team of visionary leaders at the helm",
+                "team": [
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    },
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    },
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    },
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    },
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    },
+                    {
+                        "avatar": {
+                            "path": "images/avatar.jpg"
+                        },
+                        "name": "Brian A. Futral",
+                        "role": "Chief Executive Officer"
+                    }
+                ]
+            },
+            {
+                "section": "articles",
+                "title": "You may also be interested in"
             }
         ]
     },

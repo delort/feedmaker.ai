@@ -1,18 +1,16 @@
-{% set section = data %}
-
 <section class="advantages">
     <div class="container">
-        {% if section.title %}
-            <h2 class="advantages__title">{{ section.title }}</h2>
+        {% if data.title %}
+            <h2 class="advantages__title">{{ data.title }}</h2>
         {% endif %}
-        {% if section.tabs|length %}
+        {% if data.tabs|length %}
             <div class="tabs advantages_tabs" data-tabs="advantages">
-                {% for tab in section.tabs %}
+                {% for tab in data.tabs %}
                     <button class="tabs__item {{ loop.first ? 'is-active' : '' }}" type="button">{{ tab.tab }}</button>
                 {% endfor %}
             </div>
             <div class="tabs-content advantages_tabs-content" data-tabs-content="advantages">
-                {% for tab in section.tabs %}
+                {% for tab in data.tabs %}
                     <div class="advantages__content {{ loop.first ? 'is-active' : '' }}">
                         <div>
                             {% if tab.title %}

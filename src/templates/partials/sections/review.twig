@@ -1,32 +1,30 @@
-{% set section = data %}
-
 <section class="review">
     <div class="container">
         <div class="review__content">
-            {% if section.avatar.path %}
+            {% if data.avatar.path %}
                 <img
-                    src="{{ section.avatar.path }}"
-                    alt="{{ section.avatar.title ?? section.author }}"
+                    src="{{ data.avatar.path }}"
+                    alt="{{ data.avatar.title ?? data.author }}"
                 />
             {% endif %}
             <div>
-                {% if section.logo %}
+                {% if data.logo %}
                     <img
-                        src="{{ section.logo.path }}"
-                        alt="{{ section.logo.title ?? section.author }}"
+                        src="{{ data.logo.path }}"
+                        alt="{{ data.logo.title ?? data.author }}"
                         height="25"
                     />
                 {% endif %}
-                {% if section.content %}
+                {% if data.content %}
                     <div class="paragraph review__description">
-                        <p>{{ section.content }}</p>
+                        <p>{{ data.content }}</p>
                     </div>
                 {% endif %}
-                {% if section.author %}
-                    <h2 class="review__author">{{ section.author }}</h2>
+                {% if data.author %}
+                    <h2 class="review__author">{{ data.author }}</h2>
                 {% endif %}
-                {% if section.role %}
-                    <div class="review__role">{{ section.role }}</div>
+                {% if data.role %}
+                    <div class="review__role">{{ data.role }}</div>
                 {% endif %}
             </div>
         </div>
