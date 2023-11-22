@@ -12,7 +12,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.16",
-        "eslint": "^8.53.0",
+        "eslint": "^8.54.0",
         "eslint-config-prettier": "^9.0.0",
         "fast-glob": "^3.3.2",
         "postcss": "^8.4.31",
@@ -27,10 +27,10 @@
         "postcss-pxtorem": "^6.0.0",
         "prettier": "^3.1.0",
         "prettier-plugin-css-order": "^2.0.1",
-        "vite": "^4.5.0",
-        "vite-plugin-full-reload": "^1.0.5",
+        "vite": "^5.0.2",
+        "vite-plugin-full-reload": "^1.1.0",
         "vite-plugin-twig": "^2.1.1",
-        "vite-svg-sprite-wrapper": "^1.1.1"
+        "vite-svg-sprite-wrapper": "^1.2.1"
     },
     "dependencies": {
         "sanitize.css": "^13.0.0"
@@ -63,6 +63,8 @@
                 }
             }
         ],
-        "plugins": ["prettier-plugin-css-order"]
+        "plugins": [
+            "prettier-plugin-css-order"
+        ]
     }
 }
