@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer__content">
             <div class="footer__menu">
-                {% for item in global.footerMenu %}
+                {% for item in global.footer_menu %}
                     <div class="footer__block {{ item.class }}">
                         <h2 class="footer__title">{{ item.label }}</h2>
                         {% if item.items|length %}

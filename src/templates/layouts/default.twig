@@ -6,7 +6,11 @@
     <body class="layout">
         {% include 'root::partials/header.twig' %}
 
-        {% block page %}{% endblock %}
+        {% block page %}
+            {% for key, data in global[page].sections %}
+                {% include 'root::partials/sections/' ~ key ~ '.twig' with data %}
+            {% endfor %}
+        {% endblock %}
 
         {% include 'root::partials/footer.twig' %}
 

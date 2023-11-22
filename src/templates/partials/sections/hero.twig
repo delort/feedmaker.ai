@@ -1,4 +1,4 @@
-{% set section = global.sections.hero %}
+{% set section = data %}
 
 <section class="hero">
     <div class="container">
@@ -32,9 +32,9 @@
         </svg>
     </div>
     <div class="container">
-        {% if section.logosDescription %}
+        {% if section.logos_description %}
             <div class="paragraph">
-                <p>{{ section.logosDescription }}</p>
+                <p>{{ section.logos_description }}</p>
             </div>
         {% endif %}
         {% if section.logos|length %}

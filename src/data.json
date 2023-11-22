@@ -1,6 +1,6 @@
 {
     "app": "feedmaker.ai",
-    "menuHeader": [
+    "menu_header": [
         {
             "link": "#",
             "label": "Create",
@@ -62,7 +62,7 @@
             "label": "Features"
         }
     ],
-    "footerMenu": [
+    "footer_menu": [
         {
             "link": "#",
             "label": "Product",
@@ -384,399 +384,561 @@
             "title": "Maecenas a tortor a orci vestibulum blandit."
         }
     ],
-    "sections": {
-        "hero": {
-            "title": "Design Social Media Ads and Posts Using AI",
-            "description": "Start by selecting a template from the gallery",
-            "actions": [
-                {
-                    "link": "/pricing.html",
-                    "label": "Pricing",
-                    "style": "secondary"
+    "home": {
+        "sections": {
+            "hero": {
+                "title": "Design Social Media Ads and Posts Using AI",
+                "description": "Start by selecting a template from the gallery",
+                "actions": [
+                    {
+                        "link": "/pricing.html",
+                        "label": "Pricing",
+                        "style": "secondary"
+                    },
+                    {
+                        "link": "#",
+                        "label": "Create Now",
+                        "style": "primary"
+                    }
+                ],
+                "logos_description": "Trusted by big-time companies, who win big-time revenue",
+                "logos": [
+                    {
+                        "path": "images/logos/1.svg"
+                    },
+                    {
+                        "path": "images/logos/2.svg"
+                    },
+                    {
+                        "path": "images/logos/3.svg"
+                    },
+                    {
+                        "path": "images/logos/4.svg"
+                    },
+                    {
+                        "path": "images/logos/5.svg"
+                    }
+                ]
+            },
+            "advantages": {
+                "title": "Make beautiful social media content",
+                "tabs": [
+                    {
+                        "tab": "Design",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/design.png"
+                        }
+                    },
+                    {
+                        "tab": "Animation",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/animation.png"
+                        }
+                    },
+                    {
+                        "tab": "AI assistant",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/ai-assistant.png"
+                        }
+                    },
+                    {
+                        "tab": "Schedule Publishing",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/schedule-post.png"
+                        }
+                    },
+                    {
+                        "tab": "Ad Campaigns",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/ad-campaigns.png"
+                        }
+                    }
+                ]
+            },
+            "templates": {
+                "title": "Templates for absolutely anything",
+                "tags": [
+                    "Social media posts and stories",
+                    "Banners",
+                    "Letters",
+                    "Flyer",
+                    "Presentations"
+                ],
+                "list": [
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    },
+                    {
+                        "link": "#",
+                        "image": {
+                            "path": "images/hero-template.png"
+                        }
+                    }
+                ],
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "See more designs",
+                        "style": "secondary"
+                    }
+                ]
+            },
+            "review": {
+                "avatar": {
+                    "path": "images/avatar.jpg"
                 },
-                {
-                    "link": "#",
-                    "label": "Create Now",
-                    "style": "primary"
-                }
-            ],
-            "logosDescription": "Trusted by big-time companies, who win big-time revenue",
-            "logos": [
-                {
+                "logo": {
                     "path": "images/logos/1.svg"
                 },
-                {
-                    "path": "images/logos/2.svg"
-                },
-                {
-                    "path": "images/logos/3.svg"
-                },
-                {
-                    "path": "images/logos/4.svg"
-                },
-                {
-                    "path": "images/logos/5.svg"
-                }
-            ]
-        },
-        "heroFeatures": {
-            "title": "Explore our awesome features",
-            "description": "Unlock your creativity with Feedmaker's full suite of features and abundant content. Effortlessly customize our templates in a matter of minutes or craft your own stunning creations with ease.",
-            "actions": [
-                {
-                    "link": "#",
-                    "label": "Create a Design",
-                    "style": "primary"
-                }
-            ]
-        },
-        "advantages": {
-            "title": "Make beautiful social media content",
-            "tabs": [
-                {
-                    "tab": "Design",
-                    "title": "Create design, animate objects, use AI assistant",
-                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
-                    "list": [
-                        {
-                            "icon": "grid",
-                            "title": "1K+ Professionally-designed templates"
-                        },
-                        {
-                            "icon": "layers",
-                            "title": "Large library of design elements"
-                        },
-                        {
-                            "icon": "wand",
-                            "title": "Remove BG in one click"
-                        }
-                    ],
-                    "image": {
-                        "path": "images/illustrations/design.png"
-                    }
-                },
-                {
-                    "tab": "Animation",
-                    "title": "Create design, animate objects, use AI assistant",
-                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
-                    "list": [
-                        {
-                            "icon": "grid",
-                            "title": "1K+ Professionally-designed templates"
-                        },
-                        {
-                            "icon": "layers",
-                            "title": "Large library of design elements"
-                        },
-                        {
-                            "icon": "wand",
-                            "title": "Remove BG in one click"
-                        }
-                    ],
-                    "image": {
-                        "path": "images/illustrations/animation.png"
-                    }
-                },
-                {
-                    "tab": "AI assistant",
-                    "title": "Create design, animate objects, use AI assistant",
-                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
-                    "list": [
-                        {
-                            "icon": "grid",
-                            "title": "1K+ Professionally-designed templates"
-                        },
-                        {
-                            "icon": "layers",
-                            "title": "Large library of design elements"
-                        },
-                        {
-                            "icon": "wand",
-                            "title": "Remove BG in one click"
-                        }
-                    ],
-                    "image": {
-                        "path": "images/illustrations/ai-assistant.png"
-                    }
-                },
-                {
-                    "tab": "Schedule Publishing",
-                    "title": "Create design, animate objects, use AI assistant",
-                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
-                    "list": [
-                        {
-                            "icon": "grid",
-                            "title": "1K+ Professionally-designed templates"
-                        },
-                        {
-                            "icon": "layers",
-                            "title": "Large library of design elements"
-                        },
-                        {
-                            "icon": "wand",
-                            "title": "Remove BG in one click"
-                        }
-                    ],
-                    "image": {
-                        "path": "images/illustrations/schedule-post.png"
-                    }
-                },
-                {
-                    "tab": "Ad Campaigns",
-                    "title": "Create design, animate objects, use AI assistant",
-                    "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
-                    "list": [
-                        {
-                            "icon": "grid",
-                            "title": "1K+ Professionally-designed templates"
-                        },
-                        {
-                            "icon": "layers",
-                            "title": "Large library of design elements"
-                        },
-                        {
-                            "icon": "wand",
-                            "title": "Remove BG in one click"
-                        }
-                    ],
-                    "image": {
-                        "path": "images/illustrations/ad-campaigns.png"
-                    }
-                }
-            ]
-        },
-        "templates": {
-            "title": "Templates for absolutely anything",
-            "tags": [
-                "Social media posts and stories",
-                "Banners",
-                "Letters",
-                "Flyer",
-                "Presentations"
-            ],
-            "list": [
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                },
-                {
-                    "link": "#",
-                    "image": {
-                        "path": "images/hero-template.png"
-                    }
-                }
-            ],
-            "actions": [
-                {
-                    "link": "#",
-                    "label": "See more designs",
-                    "style": "secondary"
-                }
-            ]
-        },
-        "review": {
-            "avatar": {
-                "path": "images/avatar.jpg"
+                "content": "Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit",
+                "author": "Jennifer E. Allison",
+                "role": "Chief Marketing Officer at Logoipsum"
             },
-            "logo": {
-                "path": "images/logos/1.svg"
+            "plans": {
+                "title": "Plans and pricing",
+                "caption": "Save 33%",
+                "items": [
+                    {
+                        "title": "Free",
+                        "prices": [0, 0],
+                        "actions": [
+                            {
+                                "link": "#",
+                                "label": "Get started",
+                                "style": "secondary"
+                            }
+                        ],
+                        "list": [
+                            "250+ free templates",
+                            "1GB cloud storage",
+                            "Design types templates: social media post and stories, presentations, banners and more",
+                            "Free photos and graphics",
+                            "Animate objects"
+                        ]
+                    },
+                    {
+                        "title": "Professional",
+                        "prices": [59, 699],
+                        "actions": [
+                            {
+                                "link": "#",
+                                "label": "Try 7 days for free",
+                                "style": "primary"
+                            }
+                        ],
+                        "caption": "Best bundle",
+                        "list": [
+                            "250+ free templates",
+                            "1GB cloud storage",
+                            "Design types templates: social media post and stories, presentations, banners and more",
+                            "Free photos and graphics",
+                            "Animate objects",
+                            "Background removing feature"
+                        ]
+                    },
+                    {
+                        "title": "Enterprise",
+                        "prices": [99, 1089],
+                        "actions": [
+                            {
+                                "link": "#",
+                                "label": "Try 7 days for free",
+                                "style": "primary"
+                            }
+                        ],
+                        "list": [
+                            "250+ free templates",
+                            "1GB cloud storage",
+                            "Design types templates: social media post and stories, presentations, banners and more",
+                            "Free photos and graphics",
+                            "Animate objects",
+                            "Thousands of premium design templates",
+                            "Background removing feature",
+                            "Schedule post",
+                            "Promote post"
+                        ]
+                    }
+                ]
             },
-            "content": "Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit",
-            "author": "Jennifer E. Allison",
-            "role": "Chief Marketing Officer at Logoipsum"
-        },
-        "plans": {
-            "title": "Plans and pricing",
-            "caption": "Save 33%",
-            "items": [
-                {
-                    "title": "Free",
-                    "prices": [0, 0],
-                    "actions": [
-                        {
-                            "link": "#",
-                            "label": "Get started",
-                            "style": "secondary"
-                        }
-                    ],
-                    "list": [
-                        "250+ free templates",
-                        "1GB cloud storage",
-                        "Design types templates: social media post and stories, presentations, banners and more",
-                        "Free photos and graphics",
-                        "Animate objects"
-                    ]
-                },
-                {
-                    "title": "Professional",
-                    "prices": [59, 699],
-                    "actions": [
-                        {
-                            "link": "#",
-                            "label": "Try 7 days for free",
-                            "style": "primary"
-                        }
-                    ],
-                    "caption": "Best bundle",
-                    "list": [
-                        "250+ free templates",
-                        "1GB cloud storage",
-                        "Design types templates: social media post and stories, presentations, banners and more",
-                        "Free photos and graphics",
-                        "Animate objects",
-                        "Background removing feature"
-                    ]
-                },
-                {
-                    "title": "Enterprise",
-                    "prices": [99, 1089],
-                    "actions": [
-                        {
-                            "link": "#",
-                            "label": "Try 7 days for free",
-                            "style": "primary"
-                        }
-                    ],
-                    "list": [
-                        "250+ free templates",
-                        "1GB cloud storage",
-                        "Design types templates: social media post and stories, presentations, banners and more",
-                        "Free photos and graphics",
-                        "Animate objects",
-                        "Thousands of premium design templates",
-                        "Background removing feature",
-                        "Schedule post",
-                        "Promote post"
-                    ]
-                }
-            ]
-        },
-        "articles": {
-            "title": "You may also be interested in"
-        },
-        "article": {
-            "title": "Connect with Feedmaker for Education at ISTELive 21",
-            "tags": ["Students", "School project", "Education", "Templates"],
-            "banner": {
-                "path": "https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg"
-            },
-            "content": "<p>Save the date — ISTELive is coming on June 26-30, 2021! This year’s theme is “Designing a New Learning Landscape”. Education experts from around the world will <a href=\"#\">share inspiring stories</a> about how edtech innovation can change lives and improve learning, as well as learn from each other and support student growth.</p><p>It’s no wonder then that they’re such a fantastic interactive educational tool.</p><h2>Why use comic strips?</h2><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><ol><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ol><p>As well as being simple, good comic strips use color sparingly, they ensure any text is easy to read, and they make sure illustrations, especially facial expressions, are easy to interpret and understand.</p><p>All these are really easy for children to understand and use, which means great comic strips are well within their grasp.</p><p><span class=\"fr-img-caption fr-fic fr-dii\" style=\"width:695px\"><span class=\"fr-img-wrap\"><img src=\"https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg\"><span class=\"fr-inner\" data-gramm=\"false\" data-lt-tmp-id=\"lt-983701\" spellcheck=\"false\">Find all of color templates in Fedmaker</span></span></span></p><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><h3>Why use comic strips?</h3><ul><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ul><h4>Why use comic strips?</h4>",
-            "related": [
-                {
-                    "link": "/article.html",
-                    "image": {
-                        "path": "images/article.jpg"
-                    },
-                    "category": {
-                        "title": "Team"
-                    },
-                    "title": "Maecenas a tortor a orci vestibulum blandit."
-                },
-                {
-                    "link": "/article.html",
-                    "image": {
-                        "path": "images/article.jpg"
-                    },
-                    "category": {
-                        "title": "Team"
-                    },
-                    "title": "Maecenas a tortor a orci vestibulum blandit."
-                },
-                {
-                    "link": "/article.html",
-                    "image": {
-                        "path": "images/article.jpg"
-                    },
-                    "category": {
-                        "title": "Team"
-                    },
-                    "title": "Maecenas a tortor a orci vestibulum blandit."
-                },
-                {
-                    "link": "/article.html",
-                    "image": {
-                        "path": "images/article.jpg"
-                    },
-                    "category": {
-                        "title": "Team"
-                    },
-                    "title": "Maecenas a tortor a orci vestibulum blandit."
-                }
-            ]
+            "articles": {
+                "title": "You may also be interested in"
+            }
         }
+    },
+    "features": {
+        "sections": {
+            "hero_features": {
+                "title": "Explore our awesome features",
+                "description": "Unlock your creativity with Feedmaker's full suite of features and abundant content. Effortlessly customize our templates in a matter of minutes or craft your own stunning creations with ease.",
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "Create a Design",
+                        "style": "primary"
+                    }
+                ]
+            },
+            "advantages": {
+                "title": "Make beautiful social media content",
+                "tabs": [
+                    {
+                        "tab": "Design",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/design.png"
+                        }
+                    },
+                    {
+                        "tab": "Animation",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/animation.png"
+                        }
+                    },
+                    {
+                        "tab": "AI assistant",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/ai-assistant.png"
+                        }
+                    },
+                    {
+                        "tab": "Schedule Publishing",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/schedule-post.png"
+                        }
+                    },
+                    {
+                        "tab": "Ad Campaigns",
+                        "title": "Create design, animate objects, use AI assistant",
+                        "content": "Maecenas a tortor a orci vestibulum blandit. Vestibulum mollis turpis sit amet ligula congue porta. Pellentesque molestie ante non diam vulputate, ut viverra ante feugiat. Nullam ultricies venenatis elit.",
+                        "list": [
+                            {
+                                "icon": "grid",
+                                "title": "1K+ Professionally-designed templates"
+                            },
+                            {
+                                "icon": "layers",
+                                "title": "Large library of design elements"
+                            },
+                            {
+                                "icon": "wand",
+                                "title": "Remove BG in one click"
+                            }
+                        ],
+                        "image": {
+                            "path": "images/illustrations/ad-campaigns.png"
+                        }
+                    }
+                ]
+            },
+            "articles": {
+                "title": "You may also be interested in"
+            }
+        }
+    },
+    "about": {
+        "sections": {
+            "hero": {
+                "title": "Design Social Media Ads and Posts Using AI",
+                "description": "Start by selecting a template from the gallery",
+                "actions": [
+                    {
+                        "link": "/pricing.html",
+                        "label": "Pricing",
+                        "style": "secondary"
+                    },
+                    {
+                        "link": "#",
+                        "label": "Create Now",
+                        "style": "primary"
+                    }
+                ],
+                "logos_description": "Trusted by big-time companies, who win big-time revenue",
+                "logos": [
+                    {
+                        "path": "images/logos/1.svg"
+                    },
+                    {
+                        "path": "images/logos/2.svg"
+                    },
+                    {
+                        "path": "images/logos/3.svg"
+                    },
+                    {
+                        "path": "images/logos/4.svg"
+                    },
+                    {
+                        "path": "images/logos/5.svg"
+                    }
+                ]
+            }
+        }
+    },
+    "article": {
+        "title": "Connect with Feedmaker for Education at ISTELive 21",
+        "tags": ["Students", "School project", "Education", "Templates"],
+        "banner": {
+            "path": "https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg"
+        },
+        "content": "<p>Save the date — ISTELive is coming on June 26-30, 2021! This year’s theme is “Designing a New Learning Landscape”. Education experts from around the world will <a href=\"#\">share inspiring stories</a> about how edtech innovation can change lives and improve learning, as well as learn from each other and support student growth.</p><p>It’s no wonder then that they’re such a fantastic interactive educational tool.</p><h2>Why use comic strips?</h2><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><ol><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ol><p>As well as being simple, good comic strips use color sparingly, they ensure any text is easy to read, and they make sure illustrations, especially facial expressions, are easy to interpret and understand.</p><p>All these are really easy for children to understand and use, which means great comic strips are well within their grasp.</p><p><span class=\"fr-img-caption fr-fic fr-dii\" style=\"width:695px\"><span class=\"fr-img-wrap\"><img src=\"https://app.feedmaker.ai/storage/app/media/uploaded-files/1700482191995.jpeg\"><span class=\"fr-inner\" data-gramm=\"false\" data-lt-tmp-id=\"lt-983701\" spellcheck=\"false\">Find all of color templates in Fedmaker</span></span></span></p><p>Children love stories, illustrations and bright colors and most of all we love being entertained. Comic strips are a super easy-to-use medium that provide an opportunity to tick all these boxes. And they have a way of sticking in our memory long after we view them.</p><h3>Why use comic strips?</h3><ul><li>Colors and most of all we love being entertained.</li><li>Opportunity to tick all these boxes.</li><li>Easy for children to understand and use.</li><li>Fantastic interactive educational tool.</li></ul><h4>Why use comic strips?</h4>",
+        "related": [
+            {
+                "link": "/article.html",
+                "image": {
+                    "path": "images/article.jpg"
+                },
+                "category": {
+                    "title": "Team"
+                },
+                "title": "Maecenas a tortor a orci vestibulum blandit."
+            },
+            {
+                "link": "/article.html",
+                "image": {
+                    "path": "images/article.jpg"
+                },
+                "category": {
+                    "title": "Team"
+                },
+                "title": "Maecenas a tortor a orci vestibulum blandit."
+            },
+            {
+                "link": "/article.html",
+                "image": {
+                    "path": "images/article.jpg"
+                },
+                "category": {
+                    "title": "Team"
+                },
+                "title": "Maecenas a tortor a orci vestibulum blandit."
+            },
+            {
+                "link": "/article.html",
+                "image": {
+                    "path": "images/article.jpg"
+                },
+                "category": {
+                    "title": "Team"
+                },
+                "title": "Maecenas a tortor a orci vestibulum blandit."
+            }
+        ]
     }
 }
