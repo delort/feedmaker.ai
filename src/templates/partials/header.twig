@@ -79,3 +79,58 @@
         </div>
     </div>
 </header>
+
+<div class="modal micromodal-slide" id="contactForm" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="contactForm-title">
+            <header class="modal__header">
+                <h2 class="modal__title" id="contactForm-title">
+                    Contact us
+                </h2>
+                <button class="btn btn--outline btn--icon modal__close" aria-label="Close modal" data-micromodal-close>
+                    <svg class="icon icon--size-18" aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+            </header>
+            <main class="modal__content" id="contactForm-content">
+                <div>
+                    <label for="contactForm-firstname">First name: <span>*</span></label>
+                    <input id="contactForm-firstname" type="text" placeholder="First name" required />
+                </div>
+                <div>
+                    <label for="contactForm-lastname">Last name: <span>*</span></label>
+                    <input id="contactForm-lastname" type="text" placeholder="Last name" required />
+                </div>
+                <div class="full">
+                    <label for="contactForm-email">E-mail: <span>*</span></label>
+                    <input id="contactForm-email" type="email" placeholder="Your e-mail" required />
+                </div>
+                <div class="full">
+                    <label for="contactForm-phone">Phone:</label>
+                    <input id="contactForm-phone" type="tel" placeholder="Your phone number" />
+                </div>
+                <div class="paragraph full">
+                    <p>By submitting this form, you agree to receive marketing and information from Feedmaker. You can opt out at any time by clicking unsubscribe. Feedmaker handles your information as described in our
+                        <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </main>
+            <footer class="modal__footer">
+                <button class="btn btn--primary" type="button">Submit</button>
+            </footer>
+            <div class="modal__success">
+                <header class="modal__header">
+                    <h2 class="modal__title">
+                        Thank you!
+                    </h2>
+                </header>
+                <div>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="/images/sprite.svg#checkmark"></use>
+                    </svg>
+                    Your request was successfully sent
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

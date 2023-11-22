@@ -1,0 +1,18 @@
+<section class="steps">
+    <div class="container">
+        {% if data.title %}
+            <h2 class="steps__title">{{ data.title }}</h2>
+        {% endif %}
+        {% if data.items|length %}
+            <div class="steps__content">
+                {% for item in data.items %}
+                    <div class="steps__item">
+                        <div class="paragraph">
+                            <p>{{ item.title }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

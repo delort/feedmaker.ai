@@ -33,6 +33,7 @@
         "vite-svg-sprite-wrapper": "^1.2.1"
     },
     "dependencies": {
+        "micromodal": "^0.4.10",
         "sanitize.css": "^13.0.0"
     },
     "eslintConfig": {

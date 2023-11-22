@@ -5,6 +5,8 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 1022px;
         grid-column-gap: var(--container-gap);
         grid-row-gap: 40px;
         align-items: center;
@@ -24,7 +26,7 @@
         grid-row-gap: 40px;
 
         @media (--lg-up) {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
         }
     }
 

@@ -167,12 +167,12 @@
                     "label": "About"
                 },
                 {
-                    "link": "#",
-                    "label": "Product"
+                    "link": "/investor.html",
+                    "label": "Investor Relations"
                 },
                 {
-                    "link": "#",
-                    "label": "Terms of Use"
+                    "link": "/partners.html",
+                    "label": "Partners"
                 },
                 {
                     "link": "#",
@@ -865,7 +865,7 @@
     "about": {
         "sections": [
             {
-                "section": "2_cols",
+                "section": "cols",
                 "title": "Brought together by a shared passion for design",
                 "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
                 "advantages": [
@@ -888,7 +888,7 @@
                 "position": "left"
             },
             {
-                "section": "2_cols",
+                "section": "cols",
                 "title": "Our mission",
                 "description": "Founded in 2023, Feedmaker is an online design and visual communication platform that is driven by a mission to enable individuals worldwide to design anything and share it across various platforms.",
                 "image": {
@@ -948,6 +948,150 @@
             {
                 "section": "articles",
                 "title": "You may also be interested in"
+            }
+        ]
+    },
+    "partners": {
+        "sections": [
+            {
+                "section": "cols",
+                "title": "Join feedmaker partner program",
+                "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "Become a Partner",
+                        "style": "primary"
+                    }
+                ],
+                "image": {
+                    "path": "images/partners.png"
+                },
+                "position": "left"
+            },
+            {
+                "section": "steps",
+                "title": "Some topics we’ll cover on our call:",
+                "items": [
+                    {
+                        "title": "Aenean bibendum elit vel dictum posuere es vel tortor."
+                    },
+                    {
+                        "title": "Donec luctus leo sed quam iaculis pellentesque."
+                    },
+                    {
+                        "title": "In hac habitasse platea dictumst."
+                    },
+                    {
+                        "title": "Etiam quam sapien, sagittis in dui non, feugiat aliquam libero."
+                    }
+                ]
+            },
+            {
+                "section": "faq",
+                "title": "FAQ",
+                "items": [
+                    {
+                        "title": "1. How I can become a partner?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    },
+                    {
+                        "title": "2. What are the benefits of becoming an Inflectra partner?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    },
+                    {
+                        "title": "3. Where can I access onboarding information?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    }
+                ]
+            },
+            {
+                "section": "action",
+                "title": "Join feedmaker partner program",
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "Become a Partner",
+                        "style": "primary"
+                    }
+                ]
+            }
+        ]
+    },
+    "investor": {
+        "sections": [
+            {
+                "section": "cols",
+                "title": "Join feedmaker partner program",
+                "description": "An online graphic design platform that empowers individuals to effortlessly create professional and personal visuals, regardless of their design skills, in a matter of minutes.",
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "Company information",
+                        "style": "secondary"
+                    },
+                    {
+                        "link": "#",
+                        "label": "Book a call",
+                        "style": "primary",
+                        "openContacts": true
+                    }
+                ],
+                "image": {
+                    "path": "images/investor.png"
+                },
+                "position": "left"
+            },
+            {
+                "section": "steps",
+                "title": "Some topics we’ll cover on our call:",
+                "items": [
+                    {
+                        "title": "Aenean bibendum elit vel dictum posuere es vel tortor."
+                    },
+                    {
+                        "title": "Donec luctus leo sed quam iaculis pellentesque."
+                    },
+                    {
+                        "title": "In hac habitasse platea dictumst."
+                    },
+                    {
+                        "title": "Etiam quam sapien, sagittis in dui non, feugiat aliquam libero."
+                    }
+                ]
+            },
+            {
+                "section": "faq",
+                "title": "FAQ",
+                "items": [
+                    {
+                        "title": "1. How I can become a partner?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    },
+                    {
+                        "title": "2. What are the benefits of becoming an Inflectra partner?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    },
+                    {
+                        "title": "3. Where can I access onboarding information?",
+                        "description": "Fusce tincidunt, mauris non aliquam malesuada, ex felis rhoncus tortor, eget vehicula purus orci ut est. Suspendisse potenti. Fusce nec aliquet velit, faucibus placerat turpis. Pellentesque lacus risus, vestibulum sit amet quam at, vehicula aliquet purus. Maecenas fermentum"
+                    }
+                ]
+            },
+            {
+                "section": "articles",
+                "title": "You may also be interested in"
+            },
+            {
+                "section": "action",
+                "title": "Let’s have a call",
+                "actions": [
+                    {
+                        "link": "#",
+                        "label": "Book a call",
+                        "style": "primary"
+                    }
+                ]
             }
         ]
     },

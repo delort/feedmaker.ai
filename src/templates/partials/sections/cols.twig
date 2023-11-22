@@ -20,6 +20,23 @@
                         {% endfor %}
                     </div>
                 {% endif %}
+                {% if data.actions|length %}
+                    <div class="cols__actions">
+                        {% for action in data.actions %}
+                            {% if action.openContacts %}
+                                    <button
+                                        class="btn btn--{{ action.style }}"
+                                        type="button"
+                                        data-micromodal-trigger="contactForm"
+                                    >
+                                        {{ action.label }}
+                                    </button>
+                                {% else %}
+                                    <a href="{{ action.link }}" class="btn btn--{{ action.style }}">{{ action.label }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
             <div class="cols__image">
                 {% if data.image %}

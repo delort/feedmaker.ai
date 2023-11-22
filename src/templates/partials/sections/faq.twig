@@ -1,0 +1,27 @@
+<section class="faq">
+    <div class="container">
+        {% if data.title %}
+            <h2 class="faq__title">{{ data.title }}</h2>
+        {% endif %}
+        {% if data.items|length %}
+            <div class="faq__content">
+                <div class="accordion" data-accordion>
+                    {% for item in data.items %}
+                        <div class="accordion__item">
+                            <button
+                                class="accordion__trigger"
+                                type="button"
+                                data-accordion-trigger
+                            >{{ item.title }}</button>
+                            <div class="accordion__content">
+                                <div class="paragraph">
+                                    <p>{{ item.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>

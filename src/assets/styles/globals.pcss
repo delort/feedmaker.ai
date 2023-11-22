@@ -91,6 +91,14 @@ a {
 .paragraph {
     @mixin font-body-m;
 
+    a {
+        color: var(--color-primary);
+
+        &:hover {
+            color: var(--color-primary-darken);
+        }
+    }
+
     > * {
         margin: 24px 0;
 
