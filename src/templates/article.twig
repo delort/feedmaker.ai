@@ -7,7 +7,7 @@
         <div class="article__main">
             {% if section.banner %}
                 <div class="article__banner">
-                    <img src="{{ section.banner.path }}" alt="{{ section.banner.title ?? section.title }}" />
+                    <img src="{{ section.banner.path }}" alt="{{ section.banner.title ?: section.title }}" />
                 </div>
             {% endif %}
             <div class="article__content">
@@ -90,7 +90,7 @@
                         <article class="article-short">
                             <a href="{{ item.link }}" class="article-short__poster">
                                 <img
-                                    src="{{ item.image.path }}" alt="{{ item.image.title ?? item.title }}"
+                                    src="{{ item.image.path }}" alt="{{ item.image.title ?: item.title }}"
                                 />
                             </a>
                             <div class="article-short__categories">

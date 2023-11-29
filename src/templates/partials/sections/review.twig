@@ -4,14 +4,14 @@
             {% if data.avatar.path %}
                 <img
                     src="{{ data.avatar.path }}"
-                    alt="{{ data.avatar.title ?? data.author }}"
+                    alt="{{ data.avatar.title ?: data.author }}"
                 />
             {% endif %}
             <div>
                 {% if data.logo %}
                     <img
                         src="{{ data.logo.path }}"
-                        alt="{{ data.logo.title ?? data.author }}"
+                        alt="{{ data.logo.title ?: data.author }}"
                         height="25"
                     />
                 {% endif %}

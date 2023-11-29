@@ -15,7 +15,7 @@
                     <article class="article-short">
                         <a href="{{ item.link }}" class="article-short__poster">
                             <img
-                                src="{{ item.image.path }}" alt="{{ item.image.title ?? item.title }}"
+                                src="{{ item.image.path }}" alt="{{ item.image.title ?: item.title }}"
                             />
                         </a>
                         <div class="article-short__categories">

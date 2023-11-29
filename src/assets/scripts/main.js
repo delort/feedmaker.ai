@@ -16,4 +16,11 @@ import MicroModal from 'micromodal';
     setupAccordion();
 
     MicroModal.init();
+    document.querySelectorAll('a[href="#contactForm"]')?.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            MicroModal.show('contactForm');
+        });
+    });
 })();

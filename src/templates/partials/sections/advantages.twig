@@ -41,7 +41,7 @@
                                 <img
                                     class="advantages__poster"
                                     src="{{ tab.image.path }}"
-                                    alt="{{ tab.image.title ?? tab.title }}"
+                                    alt="{{ tab.image.title ?: tab.title }}"
                                 />
                             </div>
                         {% endif %}

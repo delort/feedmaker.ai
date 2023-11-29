@@ -40,7 +40,7 @@
             </div>
             <div class="cols__image">
                 {% if data.image %}
-                    <img src="{{ data.image.path }}" alt="{{ data.image.title ?? data.title }}">
+                    <img src="{{ data.image.path }}" alt="{{ data.image.title ?: data.title }}">
                 {% endif %}
             </div>
         </div>

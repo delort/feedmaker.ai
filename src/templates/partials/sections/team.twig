@@ -14,7 +14,7 @@
                     <div>
                         {% if item.avatar %}
                             <div class="team__avatar">
-                                <img src="{{ item.avatar.path }}" alt="{{ item.avatar.title ?? item.name }}" />
+                                <img src="{{ item.avatar.path }}" alt="{{ item.avatar.title ?: item.name }}" />
                             </div>
                         {% endif %}
                         {% if item.name %}

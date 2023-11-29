@@ -16,7 +16,7 @@ import postcssCustomMedia from 'postcss-custom-media';
 import postcssCustomSelectors from 'postcss-custom-selectors';
 import autoprefixer from 'autoprefixer';
 
-import globalData from './src/data.json';
+import globalData from './src/_data.json';
 
 export default defineConfig({
     root: './src',
